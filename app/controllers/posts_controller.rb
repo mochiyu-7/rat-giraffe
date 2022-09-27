@@ -8,7 +8,8 @@ class PostsController < ApplicationController
 
   # GET /posts/1 or /posts/1.json
   def show
-    @nearest_station = NearestStation.new
+    if @post.nearest_stations.present?
+    end
   end
 
   # GET /posts/new
